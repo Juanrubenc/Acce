@@ -28,7 +28,7 @@ const NewPostForm = () => {
 };
 
   return (
-    <form className="bg-white  fixed top-60 left-40 p-10 w-96 rounded-lg shadow-md " onSubmit={handleSubmit}>
+    <form className=" bg-slate-300 top-64 absolute inset p-10 h-3/6 w-2/4 rounded-lg shadow-md " onSubmit={handleSubmit}>
         <h1 className="text-2xl text-center font-bold mb-4">New Post</h1>
       <div className="mb-4">
         <label className="block text-gray-700 font-medium mb-2" htmlFor="title">
