@@ -12,16 +12,18 @@ import { useState ,useEffect } from "react";
 import Post from "./components/Post";
 
 
+
 function App() {
   
   const [posts, setPosts] = useState([])
+
+  const URL = "https://jsonplaceholder.typicode.com/posts";
   
   useEffect(() => {
-    axios.get("https://jsonplaceholder.typicode.com/posts").then((res) => {
+    axios.get(URL).then((res) => {
       setPosts(res.data);
     });
   }, []);
-  
 
 
   
